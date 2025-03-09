@@ -25,7 +25,8 @@
 
 | Command | Description |
 |---------|-------------|
-| `uvx ruff` | Runs tool with default Python version. Auto download latest if none available. |
-| `uvx --python 3.08 ruff` | Runs tool with Python 3.08. Auto download if it cannot find version. |
+| `uv tool install ruff` | Installs tool with default Python version. Auto download latest if none available. |
+| `uv tool install --python 3.08 ruff` | Installs tool with Python 3.08. Auto download if it cannot find version. |
+| `ruff` | The tool is in the PATH, so call it directly. |
 | `~/.local/share/uv/python` | Python installation path |
 | `~/.local/share/uv/tools` | Tool installation path |
