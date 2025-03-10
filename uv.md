@@ -1,32 +1,25 @@
-# UV Cheat Sheet
+# Ultimate UV Cheat Sheet
 
-> An extremely fast Python package and project manager, written in Rust.
+## Getting Started
 
-- `uv` by default, will use its own versions before using the system version.
+- **Auto Installation**: UV automatically downloads Python if it's not available
+- **Priority System**: UV prioritizes its own Python installations over system installs, even when its version is older
 
-### Use case: Run a random python script
+## Important Paths
 
-| Command | Description |
-|---------|-------------|
-| `uv run hello.py` | Runs script with default Python version. Auto download latest if none available. |
-| `uv run --python 3.08 hello.py` | Runs script with Python 3.08. Auto download if it cannot find version. |
-| `~/.local/share/uv/python` | Python installation path |
+- Python Installations: `~/.local/share/uv/python`
+- Temporary Tools: `~/.cache/uv`
+- Permanent Tools: `~/.local/share/uv/tools`
 
-### Use case: Temporary Python CLI tool install
+## Running Python Scripts
 
-| Command | Description |
-|---------|-------------|
-| `uvx ruff` | Runs tool with default Python version. Auto download latest if none available. |
-| `uvx --python 3.08 ruff` | Runs tool with Python 3.08. Auto download if it cannot find version. |
-| `~/.local/share/uv/python` | Python installation path |
-| `~/.cache/uv` | Temp tool path |
+- `uv run hello.py` - Execute scripts with UV's default Python
 
-### Use case: Permanent Python CLI tool install
+## Temporary Tool Usage
 
-| Command | Description |
-|---------|-------------|
-| `uv tool install ruff` | Installs tool with default Python version. Auto download latest if none available. |
-| `uv tool install --python 3.08 ruff` | Installs tool with Python 3.08. Auto download if it cannot find version. |
-| `ruff` | The tool is in the PATH, so call it directly. |
-| `~/.local/share/uv/python` | Python installation path |
-| `~/.local/share/uv/tools` | Tool installation path |
+- `uvx ruff` - Run tools on-demand without permanent installation
+
+## Permanent Tool Installation
+
+- `uv tool install ruff` - Install tool permanently
+- `ruff` - Run installed tools directly (they're added to your PATH)
