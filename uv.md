@@ -7,19 +7,15 @@
 
 ## Important Paths
 
-- Python Installations: `~/.local/share/uv/python`
-- Temporary Tools: `~/.cache/uv`
-- Permanent Tools: `~/.local/share/uv/tools`
+| Category | Path |
+|----------|------|
+| Python Installations | `~/.local/share/uv/python` |
+| Permanent Tools | `~/.local/share/uv/tools` |
+| Temporary Tools | `~/.cache/uv` |
 
-## Running Python Scripts
+## Basics
 
-- `uv run hello.py` - Execute scripts with UV's default Python
-
-## Temporary Tool Usage
-
-- `uvx ruff` - Run tools on-demand without permanent installation
-
-## Permanent Tool Installation
-
-- `uv tool install ruff` - Install tool permanently
-- `ruff` - Run installed tools directly (they're added to your PATH)
+| **Running Python Scripts** | **Temporary Tool Usage** | **Permanent Tool Installation** |
+|------------------------|------------------------|----------------------------|
+| `uv run hello.py` - Execute scripts with UV's default Python | `uvx ruff` - Run tools on-demand without permanent installation | `uv tool install ruff` - Install tool permanently |
+| | | `ruff` - Run installed tools directly (they're added to your PATH) |
