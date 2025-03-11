@@ -1,9 +1,19 @@
 # Ultimate UV Cheat Sheet
 
-## Getting Started
+## Installing Python
 
-- **Auto Installation**: UV automatically downloads Python if it's not available
-- **Priority System**: UV prioritizes its own Python installations over system installs, even when its version is older
+| Use case | Command |
+|--------------|-------------|
+| Installing a specific Python version | `uv python install 3.12` |
+| List available Python versions | `uv python list` |
+
+## Basics
+
+| **Running Python Scripts** | **Temporary Tool Usage** | **Permanent Tool Installation** |
+|------------------------|------------------------|----------------------------|
+| `uv run hello.py` - Execute scripts with UV's default Python | `uvx ruff` - Run tools on-demand without permanent installation | `uv tool install ruff` - Install tool permanently |
+| | | `ruff` - Run installed tools directly (they're added to your PATH) |
+
 
 ## Important Paths
 
@@ -13,9 +23,7 @@
 | Permanent Tools | `~/.local/share/uv/tools` |
 | Temporary Tools | `~/.cache/uv` |
 
-## Basics
+## Notes
 
-| **Running Python Scripts** | **Temporary Tool Usage** | **Permanent Tool Installation** |
-|------------------------|------------------------|----------------------------|
-| `uv run hello.py` - Execute scripts with UV's default Python | `uvx ruff` - Run tools on-demand without permanent installation | `uv tool install ruff` - Install tool permanently |
-| | | `ruff` - Run installed tools directly (they're added to your PATH) |
+- **Auto Installation**: UV automatically downloads Python if it's not available
+- **Priority System**: UV prioritizes its own Python installations over system installs, even when its version is older
