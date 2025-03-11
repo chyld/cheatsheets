@@ -1,11 +1,19 @@
 # Ultimate UV Cheat Sheet
 
+## Configuration
+
+`~/.config/uv/uv.toml`
+
+| Setting | Purpose |
+|------|---------|
+| `python-preference = "only-managed"` | Only use managed Python installations; never use system Python installations |
+
 ## Installing Python
 
 | Use case | Command |
 |--------------|-------------|
 | Installing a specific Python version | `uv python install 3.12` |
-| List available Python versions | `uv python list` |
+| List available Python versions. If you use `only-managed` in your config, you will not see any system installs. | `uv python list` |
 
 ## Basics
 
@@ -13,7 +21,6 @@
 |------------------------|------------------------|----------------------------|
 | `uv run hello.py` - Execute scripts with UV's default Python | `uvx ruff` - Run tools on-demand without permanent installation | `uv tool install ruff` - Install tool permanently |
 | | | `ruff` - Run installed tools directly (they're added to your PATH) |
-
 
 ## Important Paths
 
