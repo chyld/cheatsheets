@@ -19,7 +19,7 @@
 
 | **Running Python Scripts** | **Temporary Tool Usage** | **Permanent Tool Installation** |
 |------------------------|------------------------|----------------------------|
-| `uv run hello.py` - Execute scripts with UV's default Python | `uvx ruff` - Run tools on-demand without permanent installation | `uv tool install ruff` - Install tool permanently |
+| `uv run main.py` | `uvx ruff` | `uv tool install ruff` |
 | | | `ruff` - Run installed tools directly (they're added to your PATH) |
 
 ## Important Paths
