@@ -2,10 +2,9 @@
 
 ## Configuration
 
-`~/.config/uv/uv.toml`
-
 | Setting | Purpose |
 |------|---------|
+| `~/.config/uv/uv.toml` | User-level UV config file |
 | `python-preference = "only-managed"` | Only use managed Python installations; never use system Python installations |
 
 ## Basics
