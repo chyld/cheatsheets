@@ -22,6 +22,16 @@
 | `uv run main.py` | `uvx ruff` | `uv tool install ruff` |
 | | | `ruff` - Run installed tools directly (they're added to your PATH) |
 
+## Creating Projects
+
+| Action | Command |
+|--------|---------|
+| Create a new project | `uv init my-app` |
+| Navigate to project | `cd my-app` |
+| Run the main script | `uv run main.py` |
+| Add packages | `uv add numpy pandas` |
+| View dependency tree | `uv tree` |
+
 ## Important Paths
 
 | Category | Path |
@@ -29,6 +39,7 @@
 | Python Installations | `~/.local/share/uv/python` |
 | Permanent Tools | `~/.local/share/uv/tools` |
 | Temporary Tools | `~/.cache/uv` |
+| Project Dependencies | `PROJECT_HOME/.venv` |
 
 ## Notes
 
