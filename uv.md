@@ -8,29 +8,25 @@
 |------|---------|
 | `python-preference = "only-managed"` | Only use managed Python installations; never use system Python installations |
 
-## Installing Python
-
-| Use case | Command |
-|--------------|-------------|
-| Installing a specific Python version | `uv python install 3.12` |
-| List available Python versions. If you use `only-managed` in your config, you will not see any system installs. | `uv python list` |
-
 ## Basics
 
-| **Running Python Scripts** | **Temporary Tool Usage** | **Permanent Tool Installation** |
-|------------------------|------------------------|----------------------------|
-| `uv run main.py` | `uvx ruff` | `uv tool install ruff` |
-| | | `ruff` - Run installed tools directly (they're added to your PATH) |
+| Command | Purpose |
+|---------|---------|
+| `uv python install 3.12` | Installing a specific Python version |
+| `uv python list` | List available Python versions |
+| `uv run main.py` | Execute Python script |
+| `uvx ruff` | Use tool temporarily without installation |
+| `uv tool install ruff && ruff` | Install tool permanently and run directly (it is added to your PATH) |
 
 ## Creating Projects
 
-| Action | Command |
-|--------|---------|
-| Create a new project | `uv init my-app` |
-| Navigate to project | `cd my-app` |
-| Run the main script | `uv run main.py` |
-| Add packages | `uv add numpy pandas` |
-| View dependency tree | `uv tree` |
+| Command | Action |
+|---------|--------|
+| `uv init my-app` | Create a new project |
+| `cd my-app` | Navigate to project |
+| `uv run main.py` | Run the main script |
+| `uv add numpy pandas` | Add packages |
+| `uv tree` | View dependency tree |
 
 ## Important Paths
 
