@@ -16,6 +16,7 @@
 | `uv run main.py` | Execute Python script |
 | `uvx ruff` | Use tool temporarily without installation |
 | `uv tool install ruff && ruff` | Install tool permanently and run directly (it is added to your PATH) |
+| `uv tool list` | List installed tools |
 
 ## Creating Projects
 
